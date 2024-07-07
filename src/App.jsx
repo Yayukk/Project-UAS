@@ -14,11 +14,31 @@ function AppNavigator() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Beranda" component={Beranda} />
-        <Tab.Screen name="Profil" component={Profil} />
-        <Tab.Screen name="Mata Pelajaran" component={MataPelajaran} />
-        <Tab.Screen name="Pengumuman" component={Pengumuman} />
-        <Tab.Screen name="Kontak" component={Kontak} />
+        <Tab.Screen
+          name="Beranda"
+          component={Beranda}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Profil"
+          component={Profil}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Mata Pelajaran"
+          component={MataPelajaran}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Pengumuman"
+          component={Pengumuman}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Kontak"
+          component={Kontak}
+          options={{headerShown: false}}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
